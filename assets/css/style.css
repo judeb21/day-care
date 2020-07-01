@@ -1782,7 +1782,7 @@ ul.breadcrumb li a:hover {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .privacy-content--nav {
@@ -1814,6 +1814,10 @@ ul.breadcrumb li a:hover {
 
 .privacy-content--inner ul {
   margin-left: 40px;
+  padding-top: 10px;
+}
+
+.gap-top {
   padding-top: 10px;
 }
 
