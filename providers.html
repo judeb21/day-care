@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CCHUB | Child Care Hub</title>
+    <meta name="description" content="Find the right care for your child">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/res.css">
+  </head>
+
+  <body>
+    <nav class="nav-bar-rel" aria-labelledby="header menu">
+      <div class="main-nav">
+        <div class="logo">
+          <img src="assets/img/cchublogo.png" alt="Child Care Hub Logo">
+        </div>
+
+        <div class="menu">
+          <ul class="menu-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Daycare Providers</a></li>
+            <li class="menu-cta-login"><a href="#">Login</a></li>
+            <li class="menu-cta-signup"><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <main>
+
+      <section class="hero-pr">
+        <img src="assets/img/breadcrum-providers-profile.jpg" alt="Happy Little girl">
+      </section>
+
+     <section class="profile-nav">
+       <nav class="profile-nav-main">
+         <ul class="profile-menu">
+           <li class="active"><a href="providers.html">Profile</a></li>
+           <li class=""><a href="schedule.html">Schedule</a></li>
+           <li class=""><a href="#">Tour Bookings</a></li>
+           <li class=""><a href="waitlist.html">Waitlist</a></li>
+           <li class=""><a href="reservations.html">Reservations</a></li>
+           <li class=""><a href="#">Messages</a></li>
+           <li class=""><a href="#">Reviews</a></li>
+           <li class=""><a href="analytics.html">Analytics</a></li>
+           <li class=""><a href="#">Wallets</a></li>
+           <li class=""><img src="assets/img/search.svg" alt="search"></li>
+         </ul>
+       </nav>
+     </section>
+
+     <section class="profile-main">
+       <div class="profile-accordion">
+         <!--ACCOUNT DETAILS-->
+        <div class="acc-holder">
+          <button class="accordion">Account Details</button>
+          <div class="panel">
+            <form action="/" method="POST" class="updateform">
+              <div class="form-group-up">
+                <label for="First Name">First name</label>
+                <input type="text" name="up-fname" id="up-fname" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Last Name">Last name</label>
+                <input type="text" name="up-lname" id="up-lname" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="email">Email Address</label>
+                <input type="email" name="up-email" id="up-email" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" name="up-mobile" id="up-mobile" class="form-control">
+              </div>
+
+              <p>We send reservation request notifications via SMS. You will not receive any promotional/marketing SMS.</p>
+              <span><small>By clicking "Next" you agree to our <a href="#">Terms of Service</a> and the <a href="#">Privacy Policy</a>.</small></span>
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+            </form>
+          </div>
+        </div>
+        
+        <!--Daycare info-->
+        <div class="acc-holder">
+          <button class="accordion">Daycare Info</button>
+          <div class="panel">
+            <form action="/" method="POST" class="updateform">
+              <div class="form-group-up">
+                <label for="DaycareName">Daycare Name</label>
+                <input type="text" name="up-lname" id="up-lname" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="address">Address</label>
+                <input type="text" name="up-address" id="up-address" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="daycarelicense">Daycare License Number</label>
+                <input type="text" name="up-license" id="up-license" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" name="up-mobile" id="up-mobile" class="form-control">
+              </div>
+
+              <p id="more-li">
+                <img src="assets/img/addmore.svg" alt="addmore-button">
+                Add another license number
+              </p>
+              <div class="form-label-up">
+                <input type="checkbox" name="check" id="checkbox">
+                <label for="label check" id="checktext">Show Address on the profile page and map</label>
+              </div>
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+            </form>
+          </div> 
+        </div>
+     <!--Timeslots-->   
+        <div class="acc-holder">
+          <button class="accordion">Timeslots</button>
+          <div class="panel">
+            <form action="/" method="POST" class="updateform">
+              <div class="form-group-up">
+                <label for="regularhours">Regular Hours</label>
+                <select id="reghro" name="reghropen" class="form-control">
+                  <option value="7am">7:00AM</option>
+                  <option value="7:15am">7:15AM</option>
+                  <option value="7:30am">7:30AM</option>
+                  <option value="8:00am">8:00AM</option>
+                  <option value="8:15am">8:15AM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="regularhours" class="hide">Regular Hours</label>
+                <select id="reghrc" name="reghrclose" class="form-control">
+                  <option value="9pm">9:00PM</option>
+                  <option value="9:15pm">9:15PM</option>
+                  <option value="9:30pm">9:30PM</option>
+                  <option value="10pm">10:00PM</option>
+                  <option value="10:15pm">10:15PM</option>
+                </select>
+              </div>
+
+              <div class="form-group-full">
+                <h3>Special Hours Care</h3>
+                <p><small>Check the box below if you offer weekend, evening, or overnight care upon request from parents.</small></p>
+              </div>
+
+              <div class="form-group-up">
+                <input type="checkbox" name="regularhours" id="regularhours" class="checkbox">
+                <label for="regularhours">Weeknight Care</label>
+                <select id="specialhro" name="specialhro" class="form-control">
+                  <option value="open">Open</option>
+                  <option value="7am">7:00AM</option>
+                  <option value="7:15am">7:15AM</option>
+                  <option value="7:30am">7:30AM</option>
+                  <option value="8:00am">8:00AM</option>
+                  <option value="8:15am">8:15AM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="regularhours" class="hide">Regular Hours</label>
+                <select id="specialhrc" name="specialhrc" class="form-control">
+                  <option value="close">Close</option>
+                  <option value="9pm">9:00PM</option>
+                  <option value="9:15pm">9:15PM</option>
+                  <option value="9:30pm">9:30PM</option>
+                  <option value="10pm">10:00PM</option>
+                  <option value="10:15pm">10:15PM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <input type="checkbox" name="regularhours" id="regularhours" class="checkbox">
+                <label for="regularhours">Weekend Care</label>
+                <select id="specialhro" name="specialhro" class="form-control">
+                  <option value="open">Open</option>
+                  <option value="7am">7:00AM</option>
+                  <option value="7:15am">7:15AM</option>
+                  <option value="7:30am">7:30AM</option>
+                  <option value="8:00am">8:00AM</option>
+                  <option value="8:15am">8:15AM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="" class="hide">Regular Hours</label>
+                <select id="specialhrc" name="specialhrc" class="form-control">
+                  <option value="close">Close</option>
+                  <option value="9pm">9:00PM</option>
+                  <option value="9:15pm">9:15PM</option>
+                  <option value="9:30pm">9:30PM</option>
+                  <option value="10pm">10:00PM</option>
+                  <option value="10:15pm">10:15PM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <input type="checkbox" name="regularhours" id="regularhours" class="checkbox">
+                <label for="regularhours">Overnight Care</label>
+                <select id="specialhro" name="specialhro" class="form-control">
+                  <option value="open">Open</option>
+                  <option value="7am">7:00AM</option>
+                  <option value="7:15am">7:15AM</option>
+                  <option value="7:30am">7:30AM</option>
+                  <option value="8:00am">8:00AM</option>
+                  <option value="8:15am">8:15AM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="" class="hide">Regular Hours</label>
+                <select id="specialhrc" name="specialhrc" class="form-control">
+                  <option value="close">Close</option>
+                  <option value="9pm">9:00PM</option>
+                  <option value="9:15pm">9:15PM</option>
+                  <option value="9:30pm">9:30PM</option>
+                  <option value="10pm">10:00PM</option>
+                  <option value="10:15pm">10:15PM</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="Socialmedia">Social Media Links</label>
+                <input type="url" name="up-sm" id="up-sm" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="daycareurl">Daycare Website URL</label>
+                <input type="url" name="up-web" id="up-web" class="form-control">
+              </div>
+
+              <p id="more-li">
+                <img src="assets/img/addmore.svg" alt="addmore-button">
+                Add More Links
+              </p>
+              <div class="form-label-up">
+                <input type="checkbox" name="check" id="checkbox">
+                <label for="label check" id="checktext">Show Address on the profile page and map</label>
+              </div>
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+            </form>
+          </div> 
+        </div>
+
+        <!--Services-->
+        <div class="acc-holder">
+          <button class="accordion">Services</button>
+          <div class="panel">
+            <form action="/" method="POST" class="updateform">
+              <div class="form-group-up">
+                <label for="TotalKids">Total number of Kids</label>
+                <select id="tkids" name="tkids" class="form-control">
+                  <option value="Choose">Choose</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="Totalteachers">Total number of teachers</label>
+                <select id="T-teachers" name="T-teachers" class="form-control">
+                  <option value="Choose">Choose</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+
+              <div class="service-label">
+                <h3>Meals Offered</h3>
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="label check" id="snack">Snacks</label>
+                </div>
+
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="label check" id="bfast">Breakfast</label>
+                </div>
+
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="label check" id="lunch">Lunch</label>
+                </div>
+
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="label check" id="dinner">Dinner</label>
+                </div>
+              </div>
+
+              <div class="service-label">
+                <h3>Languages Used at Daycare</h3>
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="en" id="en">English</label>
+                </div>
+
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="es" id="es">Spanish</label>
+                </div>
+
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="Chinese" id="Chinese">Chinese</label>
+                </div>
+
+                <div class="form-label-up">
+                  <input type="checkbox" name="check" id="checkbox">
+                  <label for="label check" id="Otherlang">Other</label>
+                </div>
+              </div>
+
+              <div class="form-group-full">
+                <h3>Teachers’ English Level</h3>
+                <p><small>This will help parents know how much communication they can expect from the teachers</small></p>
+              </div>
+
+              <div class="form-group-up">
+                <select id="native" name="Native" class="form-control">
+                  <option value="Native">Native</option>
+                  <option value="Chinese">Chinese</option>
+                  <option value="African">African</option>
+                </select>
+              </div>
+              
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+            </form>
+          </div> 
+        </div>
+
+        <!--Rates-->
+
+        <div class="acc-holder">
+          <button class="accordion">Rates</button>
+          <div class="panel">
+            <form action="/" method="POST" class="updateform">
+              <div class="form-group-up">
+                <label for="Infantage">Infant Age <span class="light">(2-year-old and under)</span></label>
+                <select id="Infantage" name="Infantage" class="form-control">
+                  <option value="min-age">Choose Minimum Age</option>
+                  <option value="1 Month">1 Month</option>
+                  <option value="2 Month">2 Month</option>
+                  <option value="3 Month">3 Month</option>
+                  <option value="4 Month">4 Month</option>
+                  <option value="5 Month">5 Month</option>
+                  <option value="6 Month">6 Month</option>
+                  <option value="7 Month">7 Month</option>
+                  <option value="8 Month">8 Month</option>
+                  <option value="9 Month">9 Month</option>
+                  <option value="11 Month">11 Month</option>
+                  <option value="1 Year">1 Year</option>
+                  <option value="1 Year +">> 1 Year</option>
+                  <option value="2 Year"> 2 Year</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="dailyhour"> Daily <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="dailyhour" id="dailyhour" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="hourly"> Hourly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="hourly" id="hourly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="dailyhour"> Monthly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="monthly" id="monthly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="weekly"> Weekly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="weekly" id="weekly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Weekend/Overnight"> Weekend/Overnight <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="Weekend/Overnight" id="Weekend/Overnight" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Weeknight"> Weeknight <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="Weeknight" id="Weeknight" class="form-control" min="0">
+              </div>
+
+              <div class="form-break"></div>
+              <div class="form-label-up">
+                <input type="checkbox" name="not-interested" id="not-interested">
+                <label for="label check" id="checktext">I don't offer care for this age group</label>
+              </div>
+              
+              <!--Rates-next-section-->
+
+              <div class="border-top-dark">
+                
+              </div>
+              <div class="form-group-up">
+                <label for="presschoolrate">Preschooler Rate <span class="light">(2 - 5 year old)</span></label>
+                <select id="preschoolrate" name="preschoolrate" class="form-control">
+                  <option value="min-age">Choose Minimum Age</option>
+                  <option value="1 Year Old">1 Year Old</option>
+                  <option value="2 Year Old">2 Year Old</option>
+                  <option value="3 Year Old">3 Year Old</option>
+                  <option value="4 Year Old">4 Year Old</option>
+                  <option value="5 Year Old">5 Year Old</option>
+                  <option value="6 Year Old">6 Year Old</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="dailyhour"> Daily <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="preschool-dailyhour" id="preschool-dailyhour" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="hourly"> Hourly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="preschool-hourly" id="preschool-hourly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="dailyhour"> Monthly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="preschool-monthly" id="preschool-monthly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="weekly"> Weekly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="preschool-weekly" id="preschool-weekly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Weekend/Overnight"> Weekend/Overnight <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="preschool-weekend-overnight" id="preschool-weekend-overnight" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Weeknight"> Weeknight <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="preschool-weeknight" id="preschool-weeknight" class="form-control" min="0">
+              </div>
+
+              <div class="form-break"></div>
+              <div class="form-label-up form-break">
+                <input type="checkbox" name="not-interested" id="not-interested">
+                <label for="label check" id="checkt_not-interested">I don't offer care for this age group</label>
+              </div>
+
+              <!--Next rate-->
+
+              <div class="border-top-dark">
+                
+              </div>
+              <div class="form-group-up">
+                <label for="schoolagerate">School-age Rate <span class="light">(Kindergarten and older)</span></label>
+                <select id="schoolagerate" name="schoolagerate" class="form-control">
+                  <option value="min-age">Choose Minimum Age</option>
+                  <option value="4 Year Old">4 Year Old</option>
+                  <option value="5 Year Old">5 Year Old</option>
+                  <option value="6 Year Old">6 Year Old</option>
+                  <option value="7 Year Old">7 Year Old</option>
+                  <option value="8 Year Old">8 Year Old</option>
+                  <option value="9 Year Old">9 Year Old</option>
+                </select>
+              </div>
+
+              <div class="form-group-up">
+                <label for="school age hour"> Daily <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="schoolage-dailyhour" id="schoolage-dailyhour" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="hourly"> Hourly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="schoolage-hourly" id="schoolage-hourly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="dailyhour"> Monthly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="schoolage-monthly" id="schoolage-monthly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="weekly"> Weekly <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="schoolage-weekly" id="schoolage-weekly" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Weekend/Overnight"> Weekend/Overnight <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="schoolage-weekend-overnight" id="schoolage-weekend-overnight" class="form-control" min="0">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Weeknight"> Weeknight <span class="light">($/hour)</span></label>
+                <input type="number" value="0" name="schoolage-weeknight" id="schoolage-weeknight" class="form-control" min="0">
+              </div>
+
+              <div class="form-break"></div>
+              <div class="form-label-up form-break">
+                <input type="checkbox" name="not-interested" id="not-interested">
+                <label for="label check" id="checkt_not-interested">I don't offer care for this age group</label>
+              </div>
+
+              <div class="form-label-up form-break">
+                <input type="checkbox" name="showrate" id="showrate">
+                <label for="label check" id="showrate-pg">Show Rate on Daycare Page</label>
+              </div>
+              
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+            </form>
+          </div> 
+        </div>
+
+        <!--Daycare Director Photo-->   
+        <div class="acc-holder">
+          <button class="accordion">Photos of Daycare Director</button>
+          <div class="panel">
+            <p>Image to be showed on home page</p>
+            <div class="upload-holder">
+              <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60.4688 31.375C58.3438 20.5938 48.875 12.5 37.5 12.5C28.4688 12.5 20.625 17.625 16.7188 25.125C7.3125 26.125 0 34.0938 0 43.75C0 54.0938 8.40625 62.5 18.75 62.5H59.375C68 62.5 75 55.5 75 46.875C75 38.625 68.5938 31.9375 60.4688 31.375ZM43.75 40.625V53.125H31.25V40.625H21.875L37.5 25L53.125 40.625H43.75Z" fill="#02A2AF"/>
+              </svg>
+              <h3 class="uploadcall">Drag and drop an image</h3>
+              <span>Or</span><input type="file" name="daycare-picture" id="daycare-picture" accept="image/x-png,image/gif,image/jpeg" class="fileupload">
+              <span>to choose a file</span>
+              <p>(1600x1200 or larger recommended, up to 10MB each)</p>
+            </div>
+
+            <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+          </div>
+        </div>
+
+        <!--Daycare Photo-->   
+        <div class="acc-holder">
+          <button class="accordion">Photos of Daycare</button>
+          <div class="panel">
+            <p>Image to be showed on home page</p>
+            <div class="upload-holder">
+              <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60.4688 31.375C58.3438 20.5938 48.875 12.5 37.5 12.5C28.4688 12.5 20.625 17.625 16.7188 25.125C7.3125 26.125 0 34.0938 0 43.75C0 54.0938 8.40625 62.5 18.75 62.5H59.375C68 62.5 75 55.5 75 46.875C75 38.625 68.5938 31.9375 60.4688 31.375ZM43.75 40.625V53.125H31.25V40.625H21.875L37.5 25L53.125 40.625H43.75Z" fill="#02A2AF"/>
+              </svg>
+              <h3 class="uploadcall">Drag and drop an image</h3>
+              <span>Or</span><input type="file" name="daycare-picture" id="daycare-picture" accept="image/x-png,image/gif,image/jpeg" class="fileupload">
+              <span>to choose a file</span>
+              <p>(1600x1200 or larger recommended, up to 10MB each)</p>
+            </div>
+            <div class="other-images">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+          </div>
+
+          <!--Description-->   
+        <div class="acc-holder">
+          <button class="accordion">Description</button>
+          <div class="panel">
+            <form action="/" class="updateform">
+              <div class="form-group-fl">
+                <label for="Daycare overview">Daycare Overview <span class="light">(Your history, program overview, unique features of your care)</span></label>
+                <textarea cols="50" rows="20" name="daycare-overview" class="form-control"></textarea>
+              </div>
+  
+              <div class="form-group-fl">
+                <label for="About School Owner">About School Owner / Director <span class="light">(Your history, program overview, unique features of your care)</span></label>
+                <textarea cols="50" rows="20" name="about-owner" class="form-control"></textarea>
+              </div>
+  
+              <div class="border-top-dark">
+                <h3>Daily Schedule</h3>
+              </div>
+  
+              <div class="form-group-up">
+                <label for="Time">Time</label>
+                <input type="time" name="timeschedule" id="timeschedule" class="form-control">
+              </div>
+  
+              <div class="form-group-up">
+                <label for="Activity">Activity</label>
+                <input type="text" name="activity" id="activity" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Time">Time</label>
+                <input type="time" name="timeschedule" id="timeschedule" class="form-control">
+              </div>
+  
+              <div class="form-group-up">
+                <label for="Activity">Activity</label>
+                <input type="text" name="activity" id="activity" class="form-control">
+              </div>
+
+              <div class="form-group-up">
+                <label for="Time">Time</label>
+                <input type="time" name="timeschedule" id="timeschedule" class="form-control">
+              </div>
+  
+              <div class="form-group-up">
+                <label for="Activity">Activity</label>
+                <input type="text" name="activity" id="activity" class="form-control">
+              </div>
+              
+              <div class="btn-holder"><button class="pr-btn" id="save">Add</button></div>
+
+              <div class="border-top-dark">
+                <h3>Tour policy</h3>
+              </div>
+
+              <div class="form-label-up half">
+                <input type="radio" name="parent-tour" id="parent-tour">
+                <label for="label check" id="parent-tour_label" class="light">Parents are welcome to tour before making reservation</label>
+              </div>
+
+              <div class="form-label-up half">
+                <input type="radio" name="parent-tour_not" id="parent-tour_not">
+                <label for="label check" id="parent-tour_l-not" class="light">We do not provide tours for drop-in care families</label>
+              </div>
+
+              <div class="form-label-up half">
+                <input type="radio" name="parent-reserve" id="parent-reserve">
+                <label for="label check" id="parent-reserve_label" class="light">Parent must make reservations before tour</label>
+              </div>
+
+              <div class="form-label-up half">
+                <input type="radio" name="parent-tour_not_n" id="parent-tour_not_n">
+                <label for="label check" id="parent-tour_not_nn" class="light">Parents can’t are not welcome to take tour</label>
+              </div>
+
+              <div class="form-label-up form-break">
+                <input type="checkbox" name="virtualtour-main" id="virtualtour-main">
+                <label for="label check" id="virtualtour">Provide Virtual Tour</label>
+              </div>
+
+              <div id="v-tour">
+                <p class="form-break">Upload Images for 360 experience</p>
+
+                <div class="virtual-images">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+
+            </form>
+          </div>
+        </div>
+
+        <!--Features of Your Daycare-->  
+
+        <div class="acc-holder">
+          <button class="accordion">Features of Your Daycare</button>
+          <div class="panel">
+            <form action="/" class="updateform">
+              <div class="form-feat-label">
+                <input type="checkbox" name="firstaid" id="firstaid">
+                <label for="label check">Teachers are CPR and First Aid certified</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="reggio" id="reggio">
+                <label for="label check">Reggio Emilia inspired</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="arts" id="arts">
+                <label for="label check">Arts & crafts</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="outdoor" id="outdoor">
+                <label for="label check">Outdoor play area available</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="based" id="based">
+                <label for="label check">Play-based</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="sci" id="sci">
+                <label for="label check">Science, cooking project</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="potty" id="potty">
+                <label for="label check">Children must be potty-trained</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="music" id="music">
+                <label for="label check">Music & dance</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="teacherdegree" id="teacherdegree">
+                <label for="label check">Teacher(s) have Masters Degree</label>
+              </div>
+              
+              <div class="form-feat-label">
+                <input type="checkbox" name="necpa" id="necpa">
+                <label for="label check">NECPA accredited</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Montessori" id="Montessori">
+                <label for="label check">Montessori inspired</label>
+              </div>
+
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+
+            </form>
+          </div>
+        </div>
+
+         <!--What to Bring for Drop-off-->  
+
+        <div class="acc-holder">
+          <button class="accordion">What to Bring for Drop-off</button>
+          <div class="panel">
+            <form action="/" class="updateform">
+              <div class="form-feat-label">
+                <input type="checkbox" name="Diapers" id="Diapers">
+                <label for="label check">Diapers</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Wipes" id="Wipes">
+                <label for="label check">Wipes</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="clothes" id="clothes">
+                <label for="label check">Change of clothes</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Formula" id="Formula">
+                <label for="label check">Formula / Breastmilk (for infant)</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Lunch" id="Lunch">
+                <label for="label check">Lunch</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Snack" id="Snack">
+                <label for="label check">Snack</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Blanket" id="Blanket">
+                <label for="label check">Blanket</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Nap sheet" id="Nap sheet">
+                <label for="label check">Nap sheet</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="sippy" id="sippy">
+                <label for="label check">Sippy cup / water bottle</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Bib" id="Bib">
+                <label for="label check">Bib</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Toys" id="Toys">
+                <label for="label check">Toys</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Swimming trucks" id="Swimming trucks">
+                <label for="label check">Swimming trucks</label>
+              </div>
+
+              <div class="form-feat-label">
+                <input type="checkbox" name="Other" id="Other">
+                <label for="label check">Other</label>
+              </div>
+
+              <div class="btn-holder"><button class="pr-btn" id="save">Save</button></div>
+
+            </form>
+          </div>
+        </div>
+
+       </div>
+     </section>
+      <footer class="ft">
+        <div class="ft-main">
+          <nav class="ft-main_col" aria-labelledby="ft menu">
+            <h5>The childcare hub</h5>
+            <ul class="col-list">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Do not sell my information</a></li>
+              <li><a href="#">+1 (306) 850-9384</a></li>
+              <li><a href="#">hello@thechildcarehub.com</a></li>
+            </ul>
+          </nav>
+
+          <nav class="ft-main_col" aria-labelledby="ft menu">
+            <h5>PARENTS</h5>
+            <ul class="col-list">
+              <li><a href="#">Daycares Near Me</a></li>
+              <li><a href="#">Parents Resource</a></li>
+              <li><a href="#">Places to visit</a></li>
+            </ul>
+          </nav>
+
+          <nav class="ft-main_col" aria-labelledby="ft menu">
+            <h5>PROVIDERS</h5>
+            <ul class="col-list">
+              <li><a href="#">Get referrals</a></li>
+              <li><a href="#">get reviews</a></li>
+              <li><a href="#">Providers resource</a></li>
+            </ul>
+          </nav>
+
+          <nav class="ft-main_col" aria-labelledby="ft menu">
+            <h5>LOCAL</h5>
+            <ul class="col-list">
+              <li><a href="#">Saskatchewan</a></li>
+              <li><a href="#">Toronto</a></li>
+              <li><a href="#">Montreal</a></li>
+              <li><a href="#">Ottawa</a></li>
+            </ul>
+          </nav>
+
+          <nav class="ft-main_col" aria-labelledby="ft menu">
+            <h5>SUPPORT</h5>
+            <ul class="col-list">
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="ft-copyright">
+          <div class="ft-copyright-text">
+            <p><small>&copy; 2020 The Child Care Hub</small></p>
+            <p><small>All rights reserved</small></p>
+            <p><small>· Privacy Policy</small></p>
+            <p><small>· Terms of Use</small></p>
+            <p>
+              <a href="#"><img src="assets/img/Facebook.svg" alt="Facebook"></a>
+              <a href="#"><img src="assets/img/Twitter.svg" alt="Twitter"></a>
+              <a href="#"><img src="assets/img/Instagram.svg" alt="Instagram"></a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="assets/js/index.js"></script>
+  </body>
+
+</html>

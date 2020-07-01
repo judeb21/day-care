@@ -1,0 +1,263 @@
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .hero-desc {
+    width: 64%;
+    top: 14%;
+    left: 34%;
+  }
+
+  .hambuger {
+    width: 30px;
+    position: relative;
+    left: 40%;
+  }
+
+  .bar {
+    display: block;
+    border: 1px solid var(--white-text);
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    background-color: var(--white-text);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  ul.menu-mobile {
+    list-style: none;
+    padding-top: 40px;
+  }
+
+  ul.menu-mobile li {
+    margin-bottom: 20px;
+  }
+
+  li.menu-cta-login {
+    width: 35%;
+  }
+
+  li.menu-cta-signup {
+    width: 35%;
+    margin-left: 0;
+  }
+
+  .bar-close {
+    background-color: var(--theme-color);
+    display: block;
+    width: 30%;
+    height: 2px;
+  }
+
+  .bar-close:nth-child(1) {
+    margin-bottom: 6px;
+    width: 16%;
+  }
+
+  .close {
+    float: right;
+    width: 10%;
+  }
+
+  .ft-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ft-main_col,
+  .ft-main_col:nth-child(1) {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .ft-copyright-text {
+    flex-direction: column;
+  }
+
+  .ft-copyright-text p,
+  .ft-copyright-text p:nth-child(1) {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .ft-copyright-text p:last-child {
+    padding-top: 10px;
+  }
+
+  .ft-copyright {
+    padding: 0;
+  }
+
+  .hero img {
+    margin-top: 0;
+  }
+
+
+  .feature-logo figure {
+    width: 30%;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+
+  .feature-logo {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .howitworks-main {
+    flex-direction: column;
+  }
+
+  .howitworks-main_ {
+    border: none;
+    width: 80%;
+  }
+
+  .howitworks-main_:nth-child(1), 
+  .howitworks-main_:nth-child(2) {
+    border: none;
+  }
+
+  .daycare-display {
+    flex-direction: row;
+  }
+
+  .daycares-card {
+    width: 45%;
+  }
+
+  .testi-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testi-main-card {
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px 20px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .about-content {
+    width: 80%;
+    padding: 50px 0 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .about-content p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .daycares-card {
+    width: 100%;
+  }
+
+  .hero-desc {
+    width: 85%;
+    top: 15%;
+    left: 9%;
+  }
+
+  .hero-desc h1 {
+    font-size: 30px;
+  }
+
+  .search-form {
+    padding-top: 0;
+  }
+
+  .homesearch {
+    padding: 13px 17px;
+  }
+
+  .homesubmit {
+    padding: 13px 26px;
+  }
+
+  .feature-logo figcaption {
+    width: 100%;
+  }
+
+  .features h2 {
+    padding: 0 30px;
+  }
+
+  .hambuger {
+    width: 20px;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .bar-close {
+    background-color: var(--theme-color);
+    display: block;
+    width: 30%;
+    height: 2px;
+  }
+
+  .bar-close:nth-child(1) {
+    margin-bottom: 6px;
+    width: 16%;
+  }
+
+  .close {
+    float: right;
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .hero-desc {
+    top: 12%;
+  }
+
+  .logo img {
+    width: 40%;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .hero-desc {
+    width: 80%;
+  }
+
+  .hero-desc h1 {
+    font-size: 20px;
+  }
+
+  .homesubmit {
+    padding: 13px 8px;
+  }
+
+  .feature-logo figure {
+    width: 35%;
+  }
+  
+}

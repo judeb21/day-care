@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CCHUB | Child Care Hub</title>
+    <meta name="description" content="Find the right care for your child">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/res.css">
+  </head>
+
+  <body>
+
+    <main>
+
+      <nav class="nav-bar" aria-labelledby="header menu">
+        <div class="main-nav">
+          <div class="logo-pr">
+            <img src="assets/img/cchublogo.png" alt="Child Care Hub Logo">
+          </div>
+
+          <div class="prreg_notifier">
+            <p>Already have an account? <a href="#" class="notifier">Log In</a></p>
+          </div>
+        </div>
+      </nav>       
+
+      <section class="prreg-main">
+        <div class="prreg-main-img">
+          <img src="assets/img/provider.jpg" alt="Smiling Lady">
+        </div>
+
+        <div class="prreg-main-form">
+          <h1>Create your Profile</h1>
+          <form action="/" method="POST" class="regform">
+            <div class="form-group-pr">
+              <label for="First Name">First name</label>
+              <input type="text" name="pr-fname" id="pr-fname" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Last Name" class="prlabel">Last name</label>
+              <input type="text" name="pr-lname" id="pr-lname" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Address" class="prlabel">Address Line 1</label>
+              <input type="text" name="pr-add" id="pr-add" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Address" class="prlabel">Address Line 2</label>
+              <input type="text" name="pr-add" id="pr-add" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="City" class="prlabel">City</label>
+              <input type="text" name="pr-city" id="pr-city" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Province" class="prlabel">Province</label>
+              <input type="text" name="pr-province" id="pr-province" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Zip Code" class="prlabel">Zip Code</label>
+              <input type="text" name="pr-zip" id="pr-zip" pattern="[0-9]{5}" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Phone Number" class="prlabel">Phone Number</label>
+              <input type="tel" name="pr-tel" id="pr-tel" class="form-control">
+            </div>
+
+            <div class="border-top">
+              <h3>Business</h3>
+            </div>
+
+            <div class="form-group-fr">
+              <label for="Bank" class="prlabel">Business Name</label>
+              <input type="text" name="pr-bizname" id="pr-bizname" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Bank" class="prlabel">Bank</label>
+              <input type="text" name="pr-bank" id="pr-bank" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Account Number" class="prlabel">Account Number</label>
+                <input type="text" name="pr-no" id="pr-no" class="form-control">
+              </label>
+            </div>
+
+            <div class="form-group-pr">
+              <h3 class="l-h">Type of Service</h3>
+                <input type="radio" name="ts" id="ts">
+                <label for="Type of Service" class="prlabel-radio">Daycare</label>
+                <input type="radio" name="sitter" id="sit">
+                <label for="Type of Service" class="prlabel-radio">Sitter</label>
+            </div>
+
+            <div class="form-group-pr">
+              <h3 class="l-h">How Frequently do you want your Payment</h3>
+                <input type="radio" name="ts" id="ts">
+                <label for="Type of Service" class="prlabel-radio">Daycare</label>
+                <input type="radio" name="sitter" id="sit">
+                <label for="Type of Service" class="prlabel-radio">Sitter</label>
+            </div>
+
+            <div class="form-group-pr" id="adpr">
+              <h3 class="l-h">Address</h3>
+                <input type="radio" name="ts" id="ts">
+                <label for="Type of Service" class="prlabel-radio">Same address as personal profile</label>
+            </div>
+
+            <div class="border-top">
+              <h3>Business Address</h3>
+            </div>
+
+            <div class="form-group-fr">
+              <label for="Bank" class="prlabel">Address</label>
+              <input type="text" name="pr-bizname" id="pr-bizname" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="City" class="prlabel">City</label>
+              <input type="text" name="pr-bank" id="pr-city" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Province" class="prlabel">Province</label>
+                <input type="text" name="pr-province" id="pr-province" class="form-control">
+              </label>
+            </div>
+
+            <div class="form-group-pr">
+              <label for="State" class="prlabel">State</label>
+              <input type="text" name="pr-state" id="pr-state" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Zip Code" class="prlabel">Zip Code</label>
+              <input type="text" name="pr-zip" id="pr-zip" pattern="[0-9]{5}" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Phone Number" class="prlabel">Phone Number</label>
+              <input type="tel" name="pr-tel" id="pr-tel" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="biz email" class="prlabel">Email Address</label>
+              <input type="email" name="pr-mail" id="pr-mail" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Password">Password</label>
+              <input type="password" name="pr-pass" id="pr-pass" class="form-control">
+            </div>
+
+            <div class="form-group-pr">
+              <label for="Confirm Password">Confirm Password</label>
+              <input type="password" name="pr-pass" id="pr-pass" class="form-control">
+            </div>
+
+            <div class="form-group-fr">
+              <label for="License" class="prlabel">License Number</label>
+              <input type="number" name="pr-license" id="pr-license" class="form-control">
+            </div>
+
+            <div class="form-group-fr">
+              <label for="how you heard" class="prlabel">How did you hear about us?</label>
+              <textarea name="how" rows="4" cols="50" class="form-control"></textarea>
+            </div>
+
+
+            <div class="form-label">
+              <input type="checkbox" name="check" id="checkbox">
+              <label for="label check" id="checktext" class="prlabel">By selecting Agree and continue below, I agree to The ChildCare Hub’s Terms of Service, Payments Terms of Service, Privacy Policy, and Nondiscrimination Policy.</label>
+            </div>
+
+            <button type="submit" class="pr-submit">Sign up</button> 
+            <div class="other-signup">
+              <span class="te">or with</span>
+              <a href="#"><img src="assets/img/google.svg" alt="Google"></a>
+              <a href="#"><img src="assets/img/facebookl.svg" alt="Facebook"></a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      
+    </main>
+
+  </body>
+
+</html>
