@@ -178,6 +178,11 @@
                 </ul>
               </div>
 
+              <div class="privacy-content--inner">
+                <h3>What if I have questions about this policy?</h3>
+                <p>If you have any questions or concerns regarding our privacy policies, please send us a detailed message to info@CCH.com, and we will try to resolve your concerns.</p>
+              </div>
+
             </div>
           </div>
 
@@ -250,37 +255,8 @@
       </footer>
     </main>
 
-    <script src="assets/js/index.js"></script>
-    <script>
-      document.querySelector('#weekdays').addEventListener('change', weekdays, false);
-      document.querySelector('#weekends').addEventListener('change', weekends, false);
-      document.querySelector('#holidays').addEventListener('change', holidays, false);
-
-      function weekdays(e) {
-        if (e.target.checked) {
-          document.getElementById('wkd').innerHTML = "Turn off All Weekdays";
-        } else {
-          document.getElementById('wkd').innerHTML = "Turn on All Weekdays";
-        }
-      }
-
-      function weekends(e) {
-        if (e.target.checked) {
-          document.getElementById('wke').innerHTML = "Turn off All Weekends";
-        } else {
-          document.getElementById('wke').innerHTML = "Turn on All Weekends";
-        }
-      }
-
-      function holidays(e) {
-        if (e.target.checked) {
-          document.getElementById('hol').innerHTML = "Turn off All Holidays";
-        } else {
-          document.getElementById('hol').innerHTML = "Turn on All Holidays";
-        }
-      }
-    </script>
-
+   <script src="assets/js/index.js"></script>
+   
   </body>
 
 </html>
